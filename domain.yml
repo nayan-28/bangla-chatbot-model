@@ -1,0 +1,29 @@
+version: "3.1"
+
+intents:
+  - greet
+  - greet_reply
+  - mood
+  - mood_reply
+  - thanks
+
+
+responses:
+  utter_greet:
+  - text: "হায়! কেমন আছেন আপনি?"
+
+  utter_greet_reply:
+  - text: "আমি ভালো আছি,কিভাবে সাহায্য করতে পারি?"
+
+  utter_mood:
+  - text: "আচ্ছা,ধন্যবাদ।আমি কি আপনাকে মন ভালো করার কিছু গান সাজেস্ট করতে পারি?"
+
+  utter_mood_reply:
+  - text: "ধন্যবাদ।এই নিন কিছু কিছু দারুণ গানের তালিকাঃ https://youtu.be/e0D1JZVwADw?si=12T9hzRYjJNJtPnX"
+
+  utter_thanks:
+    - text: "আপনাকে সাহায্য করে ভালো লাগলো।ভালো থাকবেন।"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

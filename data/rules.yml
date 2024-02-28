@@ -1,0 +1,29 @@
+version: "3.1"
+
+rules:
+
+- rule: Say greeting anytime the user says greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say how are you anytime the user ask how are you
+  steps:
+  - intent: greet_reply
+  - action: utter_greet_reply
+
+- rule: Say Mood anytime the user Mood
+  steps:
+  - intent: mood
+  - action: utter_mood
+
+- rule: Say Mood anytime the user Mood
+  steps:
+  - intent: mood_reply
+  - action: utter_mood_reply
+
+- rule: Say Thanks anytime the user Thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
